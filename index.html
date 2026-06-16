@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git CI/CD Demo – Team Portfolio</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #238636;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 span { color: #f78166; }
+
+    .sub {
+      color: #8b949e;
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 2rem 1.75rem;
+      flex: 1 1 280px;
+      max-width: 340px;
+      transition: border-color 0.2s, transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card:hover {
+      border-color: #58a6ff;
+      transform: translateY(-3px);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .s1 .card-icon { background: #1f3447; }
+    .s2 .card-icon { background: #1f3325; }
+
+    .card-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8b949e;
+      margin-bottom: 0.3rem;
+    }
+
+    .s1 .card-label { color: #58a6ff; }
+    .s2 .card-label { color: #3fb950; }
+
+    .card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #8b949e;
+      line-height: 1.6;
+    }
+
+    .arrow {
+      display: inline-block;
+      margin-top: 1.1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .s1 .arrow { color: #58a6ff; }
+    .s2 .arrow { color: #3fb950; }
+
+    footer {
+      margin-top: 3.5rem;
+      font-size: 0.78rem;
+      color: #484f58;
+      text-align: center;
+    }
+
+    footer code {
+      font-family: 'Courier New', monospace;
+      background: #21262d;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge">🚀 GitHub Pages · CI/CD Demo</div>
+
+  <h1>Git Trunk-Based<br><span>Development</span> in Action</h1>
+  <p class="sub">Two students · Two branches · One live site</p>
+
+  <div class="cards">
+
+    <a class="card s1" href="developer1.html">
+      <div class="card-icon">👤</div>
+      <div class="card-label">Developer 1 · Original Repo</div>
+      <h2>What is Git CI/CD?</h2>
+      <p>Explains continuous integration and delivery concepts with a clean visual layout.</p>
+      <div class="arrow">View page →</div>
+    </a>
+
+    <a class="card s2" href="developer2.html">
+      <div class="card-icon">👤</div>
+      <div class="card-label">Developer 2 · Fork &amp; PR</div>
+      <h2>Why It Matters</h2>
+      <p>Adds a new page via fork and pull request — showing real collaborative Git workflow.</p>
+      <div class="arrow">View page →</div>
+    </a>
+
+  </div>
+
+  <footer>
+    Deployed via <code>git push</code> → GitHub Pages &nbsp;·&nbsp;
+    Branch: <code>main</code> &nbsp;·&nbsp;
+    Part of an Agile CI/CD textbook demonstration
+  </footer>
+
+</body>
+</html>
